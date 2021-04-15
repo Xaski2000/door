@@ -13,7 +13,7 @@ html {
 .wrapper-kit {
 	position: relative;
 	display: flex;
-	height: 2500px;
+	height: 800px;
 	width: 1000px;
 	background-color: #aaa;
 	margin: 50px auto auto;
@@ -29,19 +29,82 @@ html {
 
 .models-kit {
 	display: flex;
-	height: 20%;
+	height: 25%;
 	width: 100%;
 	background-color: #cc7;
 	overflow-x: scroll;
 }
 
+.models-kit-test {
+	display: flex;
+	height: 25%;
+	width: 100%;
+	background-color: #cc7;
+}
+
+.slider {
+	height: 100%;
+	width: 100%;
+}
+
+.slider__container {
+	height: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.slider__wrapper {
+	height: 100%;
+}
+
+.slider__items {
+	height: 100%;
+}
+
+.slider__container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.slider__item {
+	height: 100%;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.slider__item-container {
+	line-height: 250px;
+	font-size: 100px;
+	text-align: center;
+	height: inherit;
+	color: #fff;
+}
+
+.slider__item-content {
+	height: 100%;
+	background-image: url("https://picsum.photos/200/200");
+	background-repeat: no-repeat;
+}
+
+.slider__indicators li {
+	height: 5px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+
+.slider__control {
+	width: 20px;
+	height: 25px;
+}
+
 .modelA-kit {
 	display: inline-block;
-	height: 75px;
+	height: 85%;
 	width: 150px;
 	background-color: #ed9;
-	margin: 0 15px;
+	margin: auto 10px;
 	flex-shrink: 0;
+	background-image: url(https://picsum.photos/200/150);
 }
 
 .facing-kit {

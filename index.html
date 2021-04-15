@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Door</title>
+	<link rel="stylesheet" href="./css/chiefslider.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 	<!-- Постфикс "-kit" для классов внутри конструктора -->
 	<header>
@@ -16,14 +19,61 @@
 	<main>
 		<div class="wrapper-kit">
 			<div class="menu-kit menu-scroll-kit">
-				<div class="models-kit">
-					<div class="modelA-kit">Item</div>
-					<div class="modelA-kit">Item</div>
-					<div class="modelA-kit">Item</div>
-					<div class="modelA-kit">Item</div>
-					<div class="modelA-kit">Item</div>
+				<!-- <div class="models-kit">
+					<div class="modelA-kit"></div>
+					<div class="modelA-kit"></div>
+					<div class="modelA-kit"></div>
+					<div class="modelA-kit"></div>
+					<div class="modelA-kit"></div>
+				</div> -->
+				<div class="models-kit-test">
+					<div class="slider" data-slider="chiefslider">
+						<div class="slider__container">
+							<div class="slider__wrapper">
+								<div class="slider__items">
+									<div class="slider__item">
+										<div class="slider__item-container">
+											<div onclick="alert('Клик!')" id="first" class="slider__item-content 1"></div>
+										</div>
+									</div>
+									<div class="slider__item">
+										<div class="slider__item-container">
+											<div class="slider__item-content 2"></div>
+										</div>
+									</div>
+									<div class="slider__item">
+										<div class="slider__item-container">
+											<div class="slider__item-content 3"></div>
+										</div>
+									</div>
+									<div class="slider__item">
+										<div class="slider__item-container">
+											<div class="slider__item-content 4"></div>
+										</div>
+									</div>
+									<div class="slider__item">
+										<div class="slider__item-container">
+											<div class="slider__item-content 5"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="slider__control" data-slide="prev"></a>
+						<a href="#" class="slider__control" data-slide="next"></a>
+						<ol class="slider__indicators">
+							<li data-slide-to="0"></li>
+							<li data-slide-to="1"></li>
+							<li data-slide-to="2"></li>
+							<li data-slide-to="3"></li>
+							<li data-slide-to="4"></li>
+						</ol>
+					</div>
 				</div>
-				<div class="facing-kit"></div>
+
+				<div class="facing-kit">
+					
+				</div>
 			</div>
 			<div class="result-kit"></div>
 		</div>
@@ -32,6 +82,8 @@
 	<footer>
 
 	</footer>
+	<script src="./js/chiefslider.min.js"></script>
 	<script src="./js/script.js"></script>
 </body>
+
 </html>
