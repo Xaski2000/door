@@ -13,7 +13,7 @@ html {
 .wrapper-kit {
 	position: relative;
 	display: flex;
-	height: 800px;
+	height: 2500px;
 	width: 1000px;
 	background-color: #aaa;
 	margin: 50px auto auto;
@@ -33,8 +33,6 @@ html {
 	width: 100%;
 	background-color: #cc7;
 	overflow-x: scroll;
-	scroll-snap-type: x mandatory;
-	scroll-padding: 50%;
 }
 
 .modelA-kit {
@@ -44,7 +42,6 @@ html {
 	background-color: #ed9;
 	margin: 0 15px;
 	flex-shrink: 0;
-	scroll-snap-align: center;
 }
 
 .facing-kit {
