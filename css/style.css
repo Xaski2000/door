@@ -2,11 +2,63 @@ body,
 html {
 	margin: 0;
 	padding: 0;
-	background-color: #ddd;
 }
 
 *,
 *:before,
 *:after {
 	box-sizing: border-box;
+}
+
+.wrapper-kit {
+	position: relative;
+	display: flex;
+	height: 800px;
+	width: 1000px;
+	background-color: #aaa;
+	margin: 50px auto auto;
+}
+
+.menu-kit {
+	display: inline-block;
+	height: 100%;
+	width: 40%;
+	background-color: #ccc;
+	margin: auto;
+}
+
+.models-kit {
+	display: flex;
+	height: 20%;
+	width: 100%;
+	background-color: #cc7;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-padding: 50%;
+}
+
+.modelA-kit {
+	display: inline-block;
+	height: 75px;
+	width: 200px;
+	background-color: #ed9;
+	margin: 0 15px;
+	flex-shrink: 0;
+	scroll-snap-align: center;
+}
+
+.facing-kit {
+	height: 20%;
+	width: 100%;
+	margin-top: 100px;
+	background-color: #cb4;
+}
+
+.result-kit {
+	display: inline-block;
+	height: 100%;
+	width: 55%;
+	background-color: #ddd;
+	margin: auto;
+	margin-left: 5%;
 }
