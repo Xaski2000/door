@@ -32,47 +32,39 @@ html {
 	height: 25%;
 	width: 100%;
 	background-color: #cc7;
-	overflow-x: scroll;
 }
 
-.models-kit-test {
-	display: flex;
-	height: 25%;
-	width: 100%;
-	background-color: #cc7;
-}
-
-.slider {
+.slider-1 {
 	height: 100%;
 	width: 100%;
 }
 
-.slider__container {
+.slider-1__container {
 	height: 100%;
 	padding-left: 0;
 	padding-right: 0;
 }
 
-.slider__wrapper {
+.slider-1__wrapper {
 	height: 100%;
 }
 
-.slider__items {
+.slider-1__items {
 	height: 100%;
 }
 
-.slider__container {
+.slider-1__container {
 	padding-left: 0;
 	padding-right: 0;
 }
 
-.slider__item {
+.slider-1__item {
 	height: 100%;
 	flex: 0 0 50%;
 	max-width: 50%;
 }
 
-.slider__item-container {
+.slider-1__item-container {
 	line-height: 250px;
 	font-size: 100px;
 	text-align: center;
@@ -80,31 +72,21 @@ html {
 	color: #fff;
 }
 
-.slider__item-content {
+.slider-1__item-content {
 	height: 100%;
 	background-image: url("https://picsum.photos/200/200");
 	background-repeat: no-repeat;
 }
 
-.slider__indicators li {
+.slider-1__indicators li {
 	height: 5px;
 	border-top: 5px solid transparent;
 	border-bottom: 5px solid transparent;
 }
 
-.slider__control {
+.slider-1__control {
 	width: 20px;
 	height: 25px;
-}
-
-.modelA-kit {
-	display: inline-block;
-	height: 85%;
-	width: 150px;
-	background-color: #ed9;
-	margin: auto 10px;
-	flex-shrink: 0;
-	background-image: url(https://picsum.photos/200/150);
 }
 
 .facing-kit {
@@ -112,6 +94,16 @@ html {
 	width: 100%;
 	margin-top: 100px;
 	background-color: #cb4;
+	display: flex;
+}
+
+.facing__item {
+	width: 100px;
+	height: 100px;
+	background-color: #fff;
+}
+.none {
+	display: none;
 }
 
 .result-kit {
@@ -121,4 +113,46 @@ html {
 	background-color: #ddd;
 	margin: auto;
 	margin-left: 5%;
+}
+
+.test-1 {
+	padding: 20px;
+	width: 250px;
+	height: 500px;
+	background-color: wheat;
+}
+
+.test-1-1 {
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+	background-color: red;
+}
+
+.test-1-2 {
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+}
+
+.test-1-3 {
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+	background-color: yellow;
+}
+
+.test-btn {
+	width: 100px;
+	height: 50px;
+}
+
+.test-btn-2 {
+	width: 100px;
+	height: 50px;
+}
+
+.test-block {
+	display: block;
 }
