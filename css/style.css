@@ -153,6 +153,19 @@ html {
 	z-index: 100;
 }
 
+.modelsIn-result {
+	z-index: 100;
+}
+
+.facingIn-result {
+	z-index: 10;
+}
+
+.knobIn-result {
+	transform: scale(-1, 1);
+	z-index: 100;
+}
+
 .border {
 	border: 3px solid red;
 }
