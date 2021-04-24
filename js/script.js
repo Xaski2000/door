@@ -157,13 +157,18 @@ modOutItem3.addEventListener('click', () => {
 
 facOutItem1.addEventListener('click', () => {
 	facOutResNullify();
+	facOutRes1.src = facOutRes1.dataset.src;
+	console.log(facOutRes1);
+	console.log(facOutRes2);
 	facOutRes1.classList.add('block');
 	facOutItem1.classList.add('border');
 });
 
 facOutItem2.addEventListener('click', () => {
 	facOutResNullify();
+	facOutRes2.src = facOutRes2.dataset.src;
 	facOutRes2.classList.add('block');
+	console.log(facOutRes2);
 	facOutItem2.classList.add('border');
 });
 
