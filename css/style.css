@@ -14,7 +14,7 @@ html {
 	position: relative;
 	display: flex;
 	height: 800px;
-	width: 1000px;
+	width: 1200px;
 	background-color: #aaa;
 	margin: 50px auto auto;
 }
@@ -24,135 +24,143 @@ html {
 	height: 100%;
 	width: 40%;
 	background-color: #ccc;
-	margin: auto;
+	margin-left: 0;
 }
 
 .models-kit {
 	display: flex;
-	height: 25%;
+	height: 20%;
 	width: 100%;
 	background-color: #cc7;
 }
 
-.slider-1 {
-	height: 100%;
-	width: 100%;
+.modelsOut__item {
+	margin: 10px;
+	background-color: #fff;
+	height: calc(100%-10px);
+	width: 33.3%;
 }
 
-.slider-1__container {
-	height: 100%;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.slider-1__wrapper {
-	height: 100%;
-}
-
-.slider-1__items {
-	height: 100%;
-}
-
-.slider-1__container {
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.slider-1__item {
-	height: 100%;
-	flex: 0 0 50%;
-	max-width: 50%;
-}
-
-.slider-1__item-container {
-	line-height: 250px;
-	font-size: 100px;
-	text-align: center;
-	height: inherit;
-	color: #fff;
-}
-
-.slider-1__item-content {
-	height: 100%;
-	background-image: url("https://picsum.photos/200/200");
-	background-repeat: no-repeat;
-}
-
-.slider-1__indicators li {
-	height: 5px;
-	border-top: 5px solid transparent;
-	border-bottom: 5px solid transparent;
-}
-
-.slider-1__control {
-	width: 20px;
-	height: 25px;
-}
-
-.facing-kit {
+.facingOut-kit {
 	height: 20%;
 	width: 100%;
-	margin-top: 100px;
+	margin-top: 40px;
 	background-color: #cb4;
+	padding: 5px;
+	overflow-y: scroll;
 	display: flex;
+	flex-wrap: wrap;
+	/* display: grid;
+	grid-template-columns: repeat(5, 80px);
+	grid-template-rows: repeat(7, 80px); */
 }
 
-.facing__item {
-	width: 100px;
-	height: 100px;
+.facingOut__item {
+	height: 80px;
+	width: 80px;
+	margin: 5px;
 	background-color: #fff;
 }
+
+.facingIn-kit {
+	height: 20%;
+	width: 100%;
+	margin-top: 40px;
+	background-color: #cb4;
+	padding: 5px;
+	overflow-y: scroll;
+	display: flex;
+	flex-wrap: wrap;
+	/* display: grid;
+	grid-template-columns: repeat(5, 80px);
+	grid-template-rows: repeat(7, 80px); */
+}
+
+.facingIn__item {
+	height: 80px;
+	width: 80px;
+	margin: 5px;
+	background-color: #fff;
+}
+
+.knob-kit {
+	display: flex;
+	height: 20%;
+	width: 100%;
+	margin-top: 40px;
+	background-color: #ca7;
+	padding: 10px;
+}
+
+.knob__item {
+	margin: 5px 10px;
+	background-color: #fff;
+	height: calc(100%-10px);
+	width: 33.3%;
+}
+
+
+
+.result-kit {
+	display: flex;
+	height: 100%;
+	width: 55%;
+	background-color: #ddd;
+	margin: auto 0 auto auto;
+}
+
+.resultOut-kit {
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	width: 50%;
+	background-color: #777;
+	margin: auto;
+	/* margin-left: 5%; */
+}
+
+.resultIn-kit {
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	width: 50%;
+	background-color: #777;
+	margin: auto;
+	/* margin-left: 5%; */
+}
+
+/* .facing-result-box {
+	height: 100%;
+} */
+
+.result-item {
+	margin: 20% auto auto 8%;
+	height: 80%;
+	width: auto;
+	position: absolute;
+	display: none;
+}
+
+.modelsOut-result {
+	z-index: 100;
+}
+
+.facingOut-result {
+	z-index: 10;
+}
+
+.knobOut-result {
+	z-index: 100;
+}
+
+.border {
+	border: 3px solid red;
+}
+
 .none {
 	display: none;
 }
 
-.result-kit {
-	display: inline-block;
-	height: 100%;
-	width: 55%;
-	background-color: #ddd;
-	margin: auto;
-	margin-left: 5%;
-}
-
-.test-1 {
-	padding: 20px;
-	width: 250px;
-	height: 500px;
-	background-color: wheat;
-}
-
-.test-1-1 {
-	margin: 10px;
-	width: 50px;
-	height: 50px;
-	background-color: red;
-}
-
-.test-1-2 {
-	margin: 10px;
-	width: 50px;
-	height: 50px;
-	background-color: blue;
-}
-
-.test-1-3 {
-	margin: 10px;
-	width: 50px;
-	height: 50px;
-	background-color: yellow;
-}
-
-.test-btn {
-	width: 100px;
-	height: 50px;
-}
-
-.test-btn-2 {
-	width: 100px;
-	height: 50px;
-}
-
-.test-block {
+.block {
 	display: block;
 }
