@@ -49,6 +49,9 @@ html {
 	background-color: #cb4;
 	padding: 5px;
 	overflow-y: scroll;
+	scroll-snap-type: y proximity;
+	scrollbar-color: red white;
+	scrollbar-width: thin;
 	display: flex;
 	flex-wrap: wrap;
 	/* display: grid;
@@ -62,6 +65,7 @@ html {
 	margin: 5px;
 	background-color: #fff;
 	cursor: pointer;
+	scroll-snap-align: center;
 }
 
 .facingIn-kit {
@@ -71,6 +75,9 @@ html {
 	background-color: #cb4;
 	padding: 5px;
 	overflow-y: scroll;
+	scroll-snap-type: y proximity;
+	scrollbar-color: red white;
+	scrollbar-width: thin;
 	display: flex;
 	flex-wrap: wrap;
 	/* display: grid;
@@ -84,6 +91,7 @@ html {
 	margin: 5px;
 	background-color: #fff;
 	cursor: pointer;
+	scroll-snap-align: center;
 }
 
 .knob-kit {
@@ -119,8 +127,8 @@ html {
 	display: inline-block;
 	height: 90%;
 	width: 50%;
-	/* background-color: #777; */
-	background-color: #fff;
+	background-color: #777;
+	/* background-color: #fff; */
 	margin: auto;
 	/* margin-left: 5%; */
 }
@@ -130,8 +138,8 @@ html {
 	display: inline-block;
 	height: 90%;
 	width: 50%;
-	/* background-color: #888; */
-	background-color: #fff;
+	background-color: #888;
+	/* background-color: #fff; */
 	margin: auto;
 	/* margin-left: 5%; */
 }
