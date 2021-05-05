@@ -22,183 +22,82 @@
 // });
 
 
+const
+resOut = document.querySelector('.resultOut-kit'),
+resIn = document.querySelector('.resultIn-kit'),
+modOutItem = document.querySelectorAll('.modelsOut__item'),
+modOutRes = document.querySelectorAll('.modelsOut-result'),
+modRes4 = document.querySelector('.models-result-4'),
+facOutItem = document.querySelectorAll('.facingOut__item'),
+facOutRes = document.querySelectorAll('.facingOut-result'),
+facInItem = document.querySelectorAll('.facingIn__item'),
+facInRes = document.querySelectorAll('.facingIn-result'),
+knobItem = document.querySelectorAll('.knob__item'),
+knobOutRes = document.querySelectorAll('.knobOut-result'),
+knobInRes = document.querySelectorAll('.knobIn-result'),
+selectSideBtn = document.querySelectorAll('.select-side__btn'),
+selectSideBoth = document.querySelector('.select-side--both'),
+selectSideOut = document.querySelector('.select-side--out'),
+selectSideIn = document.querySelector('.select-side--in');
 
-const modResBox = document.querySelectorAll('.models-result-box'),
-	facResBox = document.querySelectorAll('.facing-result-box'),
-	knobResBox = document.querySelectorAll('.knob-result-box');
+// const modResBox = document.querySelectorAll('.models-result-box'),
+// 	facResBox = document.querySelectorAll('.facing-result-box'),
+// 	knobResBox = document.querySelectorAll('.knob-result-box');
 
-const modOutItem = document.querySelectorAll('.modelsOut__item'),
-	modOutItem1 = document.querySelector('.modelsOut__item-1'),
-	modOutItem2 = document.querySelector('.modelsOut__item-2'),
-	modOutItem3 = document.querySelector('.modelsOut__item-3');
 
-const facOutItem = document.querySelectorAll('.facingOut__item'),
-	facOutItem1 = document.querySelector('.facingOut__item-1'),
-	facOutItem2 = document.querySelector('.facingOut__item-2');
 
-const facInItem = document.querySelectorAll('.facingIn__item'),
-	facInItem1 = document.querySelector('.facingIn__item-1'),
-	facInItem2 = document.querySelector('.facingIn__item-2'),
-	facInItem3 = document.querySelector('.facingIn__item-3');
+// const
+// 	facOutItem1 = document.querySelector('.facingOut__item-1'),
+// 	facOutItem2 = document.querySelector('.facingOut__item-2');
 
-const knobItem = document.querySelectorAll('.knob__item'),
-	knobItem1 = document.querySelector('.knob__item-1'),
-	knobItem2 = document.querySelector('.knob__item-2'),
-	knobItem3 = document.querySelector('.knob__item-3');
+// const
+// 	facInItem1 = document.querySelector('.facingIn__item-1'),
+// 	facInItem2 = document.querySelector('.facingIn__item-2'),
+// 	facInItem3 = document.querySelector('.facingIn__item-3');
 
+// const
+// 	knobItem1 = document.querySelector('.knob__item-1'),
+// 	knobItem2 = document.querySelector('.knob__item-2'),
+// 	knobItem3 = document.querySelector('.knob__item-3');
+
+// //
+
+// const modOutRes = document.querySelectorAll('.modelsOut-result'),
+
+
+// const modInRes = document.querySelectorAll('.modelsIn-result'),
+// 	facInRes = document.querySelectorAll('.facingIn-result'),
+
+
+// // Корпуса
+
+// const modRes1 = document.querySelector('.models-result-1'),
+// 	modRes2 = document.querySelector('.models-result-2'),
+// 	modRes3 = document.querySelector('.models-result-3'),
 //
-
-const modOutRes = document.querySelectorAll('.modelsOut-result'),
-	facOutRes = document.querySelectorAll('.facingOut-result'),
-	knobOutRes = document.querySelectorAll('.knobOut-result');
-
-const modInRes = document.querySelectorAll('.modelsIn-result'),
-	facInRes = document.querySelectorAll('.facingIn-result'),
-	knobInRes = document.querySelectorAll('.knobIn-result');
-
-// Корпуса
-
-const modRes1 = document.querySelector('.models-result-1'),
-	modRes2 = document.querySelector('.models-result-2'),
-	modRes3 = document.querySelector('.models-result-3'),
-	modRes4 = document.querySelector('.models-result-4');
-
-// Внешние панели
-
-const facOutRes1 = document.querySelector('.facingOut-result-1'),
-	facOutRes2 = document.querySelector('.facingOut-result-2');
-
-// Внутренние панели
-
-const facInRes1 = document.querySelector('.facingIn-result-1'),
-	facInRes2 = document.querySelector('.facingIn-result-2'),
-	facInRes3 = document.querySelector('.facingIn-result-3');
-
-// const facRes1 = document.querySelector('.facing-result-1'),
-// 		facRes2 = document.querySelector('.facing-result-2');
-
-// Внешние ручки
-
-const knobOutRes1 = document.querySelector('.knobOut-result-1');
-
-// Внутренние ручки
-
-const knobInRes1 = document.querySelector('.knobIn-result-1');
-
-// function modOutResNullify() {
-// 	modOutRes.forEach(item => {
-// 		item.classList.remove('block');
-// 	});
-// 	modOutItem.forEach(item => {
-// 		item.classList.remove('border');
-// 	});
-// 	modRes4.classList.add('block');
-// }
-
-// function modInResNullify() {
-// 	modInRes.forEach(item => {
-// 		item.classList.remove('block');
-// 	});
-// }
-
-// function facOutResNullify() {
-// 	facOutRes.forEach(item => {
-// 		item.classList.remove('block');
-// 	});
-// 	facOutItem.forEach(item => {
-// 		item.classList.remove('border');
-// 	});
-
-// }
-
-// function facInResNullify() {
-// 	facInRes.forEach(item => {
-// 		item.classList.remove('block');
-// 	});
-// 	facInItem.forEach(item => {
-// 		item.classList.remove('border');
-// 	});
-// }
-
-// function knobResNullify() {
-// 	knobOutRes.forEach(item => {
-// 		item.classList.remove('block');
-// 	});
-// 	knobInRes.forEach(item => {
-// 		item.classList.remove('block');
-// 	});
-// 	knobItem.forEach(item => {
-// 		item.classList.remove('border');
-// 	});
-// }
-
-// // Внешние корпуса
-
-// modOutItem1.addEventListener('click', (e) => {
-// 	modOutResNullify();
-// 	// modRes2.classList.remove('block');
-// 	modRes1.classList.add('block');
-// 	e.target.classList.add('border');
-// });
-
-// modOutItem2.addEventListener('click', (e) => {
-// 	modOutResNullify();
-// 	modRes2.classList.add('block');
-// 	e.target.classList.add('border');
-// });
-
-// modOutItem3.addEventListener('click', (e) => {
-// 	modOutResNullify();
-// 	modRes3.classList.add('block');
-// 	modRes4.classList.add('block');
-// 	e.target.classList.add('border');
-// });
 
 // // Внешние панели
 
-// facOutItem1.addEventListener('click', (e) => {
-// 	facOutResNullify();
-// 	facOutRes1.src = facOutRes1.dataset.src;
-// 	facOutRes1.classList.add('block');
-// 	e.target.classList.add('border');
-// });
-
-// facOutItem2.addEventListener('click', (e) => {
-// 	facOutResNullify();
-// 	facOutRes2.src = facOutRes2.dataset.src;
-// 	facOutRes2.classList.add('block');
-// 	e.target.classList.add('border');
-// });
+// const facOutRes1 = document.querySelector('.facingOut-result-1'),
+// 	facOutRes2 = document.querySelector('.facingOut-result-2');
 
 // // Внутренние панели
 
-// facInItem1.addEventListener('click', (e) => {
-// 	facInResNullify();
-// 	facInRes1.classList.add('block');
-// 	e.target.classList.add('border');
-// });
+// const facInRes1 = document.querySelector('.facingIn-result-1'),
+// 	facInRes2 = document.querySelector('.facingIn-result-2'),
+// 	facInRes3 = document.querySelector('.facingIn-result-3');
 
-// facInItem2.addEventListener('click', (e) => {
-// 	facInResNullify();
-// 	facInRes2.classList.add('block');
-// 	e.target.classList.add('border');
-// });
+// // const facRes1 = document.querySelector('.facing-result-1'),
+// // 		facRes2 = document.querySelector('.facing-result-2');
 
-// facInItem3.addEventListener('click', (e) => {
-// 	facInResNullify();
-// 	facInRes3.classList.add('block');
-// 	e.target.classList.add('border');
-// 	console.log(facInItem3);
-// });
+// // Внешние ручки
 
-// // Ручки
+// const knobOutRes1 = document.querySelector('.knobOut-result-1');
 
-// knobItem1.addEventListener('click', (e) => {
-// 	knobResNullify();
-// 	knobOutRes1.classList.add('block');
-// 	knobInRes1.classList.add('block');
-// 	e.target.classList.add('border');
-// });
+// // Внутренние ручки
+
+// const knobInRes1 = document.querySelector('.knobIn-result-1');
+
 
 modOutItem.forEach(function (item, i, arr) {
 	if (i + 1 <= modOutRes.length) {
@@ -300,3 +199,37 @@ knobItem.forEach(function (item, i, arr) {
 		});
 	}
 });
+
+selectSideBtn.forEach(function (item, i, arr) {
+	item.addEventListener('click', (e) => {
+		selectSideBtn.forEach(item => {
+			item.classList.remove('border');
+		});
+		item.classList.add('border');
+	});
+});
+
+selectSideBoth.addEventListener('click', (e) => {
+	resOut.classList.remove('none');
+	resIn.classList.remove('none');
+	resOut.classList.add('block');
+	resIn.classList.add('block');
+});
+
+selectSideOut.addEventListener('click', (e) => {
+	resOut.classList.remove('block');
+	resIn.classList.remove('block');
+	resOut.classList.add('none');
+	resIn.classList.add('none');
+	resOut.classList.add('block');
+});
+
+selectSideIn.addEventListener('click', (e) => {
+	resOut.classList.remove('block');
+	resIn.classList.remove('block');
+	resOut.classList.add('none');
+	resIn.classList.add('none');
+	resIn.classList.add('block');
+});
+
+
