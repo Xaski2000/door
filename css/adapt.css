@@ -49,12 +49,24 @@
 		position: fixed;
 		z-index: 10000;
 		width: 90vw;
-		height: 50vh;
+		height: auto;
+		max-height: 50vh;
 		top: 50%;
 		left: 50%;
 		margin-right: -50%;
 		transform: translate(-50%, -50%);
 		/* display: none; */
+	}
+
+
+	.modelsOut__item {
+		width: 30%;
+		height: auto;
+		margin: 5px 0 5px 3%;
+		background-color: #fff;
+		border: 3px solid #e9e9e9;
+		cursor: pointer;
+		transition: all 0.3s;
 	}
 
 	.facingOut-kit {
@@ -167,6 +179,13 @@
 		cursor: pointer;
 	}
 
+	.select-side__text {
+		margin: auto;
+		font-family: 'Merriweather', serif;
+		text-align: center;
+		font-size: 14px;
+	}
+
 	.none {
 		display: none;
 	}
@@ -177,5 +196,9 @@
 
 	.flex {
 		display: flex;
+	}
+
+	.border {
+		border: 3px solid #a76d50;
 	}
 }
