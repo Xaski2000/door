@@ -1,31 +1,60 @@
 const
-resOut = document.querySelector('.resultOut-kit'),
-resIn = document.querySelector('.resultIn-kit'),
-modOutItem = document.querySelectorAll('.modelsOut__item'),
-modOutRes = document.querySelectorAll('.modelsOut-result'),
-modRes4 = document.querySelector('.models-result-4'),
-facOutItem = document.querySelectorAll('.facingOut__item'),
-facOutRes = document.querySelectorAll('.facingOut-result'),
-facInItem = document.querySelectorAll('.facingIn__item'),
-facInRes = document.querySelectorAll('.facingIn-result'),
-knobItem = document.querySelectorAll('.knob__item'),
-knobOutRes = document.querySelectorAll('.knobOut-result'),
-knobInRes = document.querySelectorAll('.knobIn-result'),
-selectSideBtn = document.querySelectorAll('.select-side__btn'),
-selectSideBoth = document.querySelector('.select-side--both'),
-selectSideOut = document.querySelector('.select-side--out'),
-selectSideIn = document.querySelector('.select-side--in');
+	resOut = document.querySelector('.resultOut-kit'),
+	resIn = document.querySelector('.resultIn-kit'),
+	modOutItem = document.querySelectorAll('.modelsOut__item'),
+	modOutRes = document.querySelectorAll('.modelsOut-result'),
+	modRes4 = document.querySelector('.models-result-4'),
+	facOutItem = document.querySelectorAll('.facingOut__item'),
+	facOutRes = document.querySelectorAll('.facingOut-result'),
+	facInItem = document.querySelectorAll('.facingIn__item'),
+	facInRes = document.querySelectorAll('.facingIn-result'),
+	knobItem = document.querySelectorAll('.knob__item'),
+	knobOutRes = document.querySelectorAll('.knobOut-result'),
+	knobInRes = document.querySelectorAll('.knobIn-result'),
+	selectSideBtn = document.querySelectorAll('.select-side__btn'),
+	selectSideBoth = document.querySelector('.select-side--both'),
+	selectSideOut = document.querySelector('.select-side--out'),
+	selectSideIn = document.querySelector('.select-side--in');
 
 const
-modBox = document.querySelector('.models-kit'),
-facOutBox = document.querySelector('.facingOut-kit'),
-facInBox = document.querySelector('.facingIn-kit'),
-knobBox = document.querySelector('.knob-kit'),
-testover = document.querySelector('.testover'),
-testmod = document.querySelector('.testmod'),
-testfacOut = document.querySelector('.testfacOut'),
-testfacIn = document.querySelector('.testfacIn'),
-testknob = document.querySelector('.testknob');
+	modBox = document.querySelector('.models-kit'),
+	facOutBox = document.querySelector('.facingOut-kit'),
+	facInBox = document.querySelector('.facingIn-kit'),
+	knobBox = document.querySelector('.knob-kit'),
+	testover = document.querySelector('.testover'),
+	testmod = document.querySelector('.testmod'),
+	testfacOut = document.querySelector('.testfacOut'),
+	testfacIn = document.querySelector('.testfacIn'),
+	testknob = document.querySelector('.testknob');
+
+const
+	resInAll = document.querySelectorAll('.resultIn-kit'),
+	testint = document.querySelector('.testint'),
+	testintIn = document.querySelector('.testint-inside');
+
+// String.prototype.filename = function(extension){
+// 	var s = this.replace(/\\/g, '/');
+// 	s = s.substring(s.lastIndexOf('/')+ 1);
+// 	return extension? s.replace(/[?#].+$/, ''): s.split('.')[0];
+// };
+
+// console.log(modRes4.src.filename());
+
+// Вывод имени файла
+
+// let names = document.querySelector('.models-result-1').getAttribute('data-src').split('/');
+// let name = names[nameArray .length - 1].split('.')[0];
+
+
+// Дверь на фоне
+
+// selectSideBoth.addEventListener('click', (e) => {
+// 	testint.classList.remove('none');
+// 	testint.classList.add('block');
+// 	console.log('rere');
+
+// 	testintIn.appendChild(resIn.cloneNode(true));
+// });
 
 testmod.addEventListener('click', (e) => {
 	testover.classList.add('block');
@@ -69,15 +98,19 @@ modOutItem.forEach(function (item, i, arr) {
 			modOutRes[i].src = modOutRes[i].dataset.src;
 			modOutRes[i].classList.add('block');
 
-			const a = modOutRes[i].alt;
-			console.log(a);
+			// const a = modOutRes[i].alt;
+			// console.log(a);
+			let names = modOutRes[i].getAttribute('data-src').split('/');
+			let name = names[names.length - 1].split('.')[0];
+			console.log(name);
 
 			modRes4.src = modRes4.dataset.src;
 			modRes4.classList.add('block');
 
 			e.target.classList.add('border');
 
-			console.log('Корпус ' + (i+1));
+
+			// console.log('Корпус ' + (i + 1));
 
 		});
 	}
@@ -96,12 +129,15 @@ facOutItem.forEach(function (item, i, arr) {
 			facOutRes[i].src = facOutRes[i].dataset.src;
 			facOutRes[i].classList.add('block');
 
-			const a = facOutRes[i].alt;
-			console.log(a);
+			// const a = facOutRes[i].alt;
+			// console.log(a);
+			let names = facOutRes[i].getAttribute('data-src').split('/');
+			let name = names[names.length - 1].split('.')[0];
+			console.log(name);
 
 			e.target.classList.add('border');
 
-			console.log('Внешняя панель ' + (i+1));
+			// console.log('Внешняя панель ' + (i + 1));
 
 		});
 	}
@@ -120,12 +156,15 @@ facInItem.forEach(function (item, i, arr) {
 			facInRes[i].src = facInRes[i].dataset.src;
 			facInRes[i].classList.add('block');
 
-			const a = facInRes[i].alt;
-			console.log(a);
+			// const a = facInRes[i].alt;
+			// console.log(a);
+			let names = facInRes[i].getAttribute('data-src').split('/');
+			let name = names[names.length - 1].split('.')[0];
+			console.log(name);
 
 			e.target.classList.add('border');
 
-			console.log('Внутренняя панель ' + (i+1));
+			// console.log('Внутренняя панель ' + (i + 1));
 
 		});
 	}
@@ -146,13 +185,16 @@ knobItem.forEach(function (item, i, arr) {
 			knobInRes[i].src = knobInRes[i].dataset.src;
 			knobInRes[i].classList.add('block');
 
-			const a = knobOutRes[i].alt;
-			console.log(a);
+			// const a = knobOutRes[i].alt;
+			// console.log(a);
+			let names = knobOutRes[i].getAttribute('data-src').split('/');
+			let name = names[names.length - 1].split('.')[0];
+			console.log(name);
 
 			e.target.classList.add('border');
 
-			console.log('Фурнитура ' + (i+1));
-			console.log(knobOutRes[i].dataset.src);
+			// console.log('Фурнитура ' + (i + 1));
+			// console.log(knobOutRes[i].dataset.src);
 
 		});
 	}

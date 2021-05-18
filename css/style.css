@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
 body,
 html {
 	margin: 0;
@@ -31,34 +33,48 @@ html {
 	display: inline-block;
 	height: 100%;
 	max-width: 480px;
-	background-color: #ccc;
+	background-color: #fff;
 	margin-left: 0;
+}
+
+.item-name {
+	height: 40px;
+	width: 100%;
+	margin: 0;
+	background-color: #f8f5f0;
+	margin-bottom: 5px;
 }
 
 .models-kit {
 	display: flex;
-	height: 20%;
+	height: 155px;
 	width: 100%;
-	background-color: #cc7;
+	background-color: #f8f5f0;
 }
 
 .modelsOut__item {
 	margin: 10px;
 	background-color: #fff;
+	border: 3px solid #e9e9e9;
 	height: calc(100%-10px);
 	width: 33.3%;
 	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.modelsOut__item:hover {
+	background-color: #f8f5f0;
 }
 
 .facingOut-kit {
-	height: 20%;
+	height: 155px;
 	width: 100%;
-	margin-top: 40px;
-	background-color: #cb4;
+	/* margin-top: 40px; */
+	background-color: #f8f5f0;
 	padding: 5px;
 	overflow-y: scroll;
 	scroll-snap-type: y proximity;
-	scrollbar-color: red white;
+	scrollbar-color: #a76d50 #f8f5f0;
 	scrollbar-width: thin;
 	display: flex;
 	flex-wrap: wrap;
@@ -67,25 +83,47 @@ html {
 	grid-template-rows: repeat(7, 80px); */
 }
 
-
-.facingOut__item {
+/* .facingOut__item {
 	height: 80px;
 	width: 80px;
 	margin: 5px;
 	background-color: #fff;
+	border: 3px solid #e9e9e9;
 	cursor: pointer;
 	scroll-snap-align: center;
+	transition: all 0.3s;
+} */
+
+.facingOut__item {
+	width: 22%;
+	height: auto;
+	margin: 5px 0 5px 3%;
+	background-color: #fff;
+	border: 3px solid #e9e9e9;
+	cursor: pointer;
+	scroll-snap-align: center;
+	transition: all 0.3s;
+}
+
+.facingOut__item::after {
+	content: '';
+	display: block;
+	padding-top: 81%;
+}
+
+.facingOut__item:hover {
+	background-color: #f8f5f0;
 }
 
 .facingIn-kit {
-	height: 20%;
+	height: 155px;
 	width: 100%;
-	margin-top: 40px;
-	background-color: #cb4;
+	/* margin-top: 40px; */
+	background-color: #f8f5f0;
 	padding: 5px;
 	overflow-y: scroll;
-	scroll-snap-type: y proximity;
-	scrollbar-color: red white;
+	scroll-snap-type: y mandatory;
+	scrollbar-color: #a76d50 #f8f5f0;
 	scrollbar-width: thin;
 	display: flex;
 	flex-wrap: wrap;
@@ -94,30 +132,59 @@ html {
 	grid-template-rows: repeat(7, 80px); */
 }
 
-.facingIn__item {
+/* .facingIn__item {
 	height: 80px;
 	width: 80px;
 	margin: 5px;
 	background-color: #fff;
+	border: 3px solid #e9e9e9;
 	cursor: pointer;
 	scroll-snap-align: center;
+	transition: all 0.3s;
+} */
+
+.facingIn__item {
+	width: 22%;
+	height: auto;
+	margin: 5px 0 5px 3%;
+	background-color: #fff;
+	border: 3px solid #e9e9e9;
+	cursor: pointer;
+	scroll-snap-align: center;
+	transition: all 0.3s;
+}
+
+.facingIn__item::after {
+	content: '';
+	display: block;
+	padding-top: 81%;
+}
+
+.facingIn__item:hover {
+	background-color: #f8f5f0;
 }
 
 .knob-kit {
 	display: flex;
-	height: 20%;
+	height: 155px;
 	width: 100%;
-	margin-top: 40px;
-	background-color: #ca7;
+	/* margin-top: 40px; */
+	background-color: #f8f5f0;
 	padding: 10px;
 }
 
 .knob__item {
 	margin: 5px 10px;
 	background-color: #fff;
+	border: 3px solid #e9e9e9;
 	height: calc(100%-10px);
 	width: 33.3%;
 	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.knob__item:hover {
+	background-color: #f8f5f0;
 }
 
 
@@ -142,7 +209,7 @@ html {
 	display: inline-block;
 	height: 100%;
 	width: 330px;
-	background-color: #777;
+	/* background-color: #777; */
 	/* background-color: #fff; */
 	margin: auto;
 	/* margin-left: 5%; */
@@ -153,29 +220,10 @@ html {
 	display: inline-block;
 	height: 100%;
 	width: 330px;
-	background-color: #888;
+	/* background-color: #888; */
 	/* background-color: #fff; */
 	margin: auto;
 	/* margin-left: 5%; */
-}
-
-.select-side__btns {
-	display: flex;
-	width: 100%;
-	height: 10%;
-}
-
-.select-side__btn {
-	display: inline-flex;
-	margin: auto;
-	width: 200px;
-	height: 60px;
-	background-color: #fff;
-	cursor: pointer;
-}
-
-.select-side__text {
-	margin: auto;
 }
 
 /* .facing-result-box {
@@ -206,6 +254,33 @@ html {
 	transform: translate(-50%, -50%);
 }
 
+.select-side__btns {
+	display: flex;
+	width: 100%;
+	height: 10%;
+	background-color: #fff;
+}
+
+.select-side__btn {
+	display: inline-flex;
+	margin: auto;
+	width: 200px;
+	height: 60px;
+	background-color: #fff;
+	border: 3px solid #e9e9e9;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.select-side__btn:hover {
+	background-color: #f8f5f0;
+}
+
+.select-side__text {
+	margin: auto;
+	font-family: 'Merriweather', serif;
+}
+
 .modelsOut-result {
 	z-index: 100;
 }
@@ -232,7 +307,7 @@ html {
 }
 
 .border {
-	border: 3px solid red;
+	border: 3px solid #a76d50;
 }
 
 .none {
@@ -241,4 +316,22 @@ html {
 
 .block {
 	display: block;
+}
+
+.testint {
+	/* display: none; */
+	width: 1200px;
+	height: 800px;
+	background-image: url(/img/Stalnaya_dver_Gardian_Vkhodnye_dveri_s_zerkalom_1_.jpg);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000000;
+}
+
+.testint-inside {
+	height: 100%;
+	width: 330px;
 }

@@ -31,6 +31,10 @@
 		flex-wrap: wrap;
 	}
 
+	.item-name {
+		display: none;
+	}
+
 	.menu-kit {
 		display: inline-block;
 		height: 300px;
