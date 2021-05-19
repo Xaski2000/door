@@ -32,6 +32,16 @@ const
 	testint = document.querySelector('.testint'),
 	testintIn = document.querySelector('.testint-inside');
 
+	const
+	modName = document.querySelector('.models-name'),
+	facOutName = document.querySelector('.facingOut-name'),
+	facInName = document.querySelector('.facingIn-name'),
+	knobName = document.querySelector('.knob-name');
+
+
+
+
+
 // String.prototype.filename = function(extension){
 // 	var s = this.replace(/\\/g, '/');
 // 	s = s.substring(s.lastIndexOf('/')+ 1);
@@ -102,12 +112,14 @@ modOutItem.forEach(function (item, i, arr) {
 			// console.log(a);
 			let names = modOutRes[i].getAttribute('data-src').split('/');
 			let name = names[names.length - 1].split('.')[0];
-			console.log(name);
+			// console.log(name);
+			modName.innerHTML = name;
 
 			modRes4.src = modRes4.dataset.src;
 			modRes4.classList.add('block');
 
 			e.target.classList.add('border');
+
 
 
 			// console.log('Корпус ' + (i + 1));
@@ -133,7 +145,8 @@ facOutItem.forEach(function (item, i, arr) {
 			// console.log(a);
 			let names = facOutRes[i].getAttribute('data-src').split('/');
 			let name = names[names.length - 1].split('.')[0];
-			console.log(name);
+			// console.log(name);
+			facOutName.innerHTML = name;
 
 			e.target.classList.add('border');
 
@@ -160,7 +173,8 @@ facInItem.forEach(function (item, i, arr) {
 			// console.log(a);
 			let names = facInRes[i].getAttribute('data-src').split('/');
 			let name = names[names.length - 1].split('.')[0];
-			console.log(name);
+			// console.log(name);
+			facInName.innerHTML = name;
 
 			e.target.classList.add('border');
 
@@ -189,7 +203,8 @@ knobItem.forEach(function (item, i, arr) {
 			// console.log(a);
 			let names = knobOutRes[i].getAttribute('data-src').split('/');
 			let name = names[names.length - 1].split('.')[0];
-			console.log(name);
+			// console.log(name);
+			knobName.innerHTML = name;
 
 			e.target.classList.add('border');
 
