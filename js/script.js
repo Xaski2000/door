@@ -11,6 +11,7 @@ const
 	knobItem = document.querySelectorAll('.knob__item'),
 	knobOutRes = document.querySelectorAll('.knobOut-result'),
 	knobInRes = document.querySelectorAll('.knobIn-result'),
+	wallBtn = document.querySelector('.wallpapper__btn'),
 	selectSideBtn = document.querySelectorAll('.select-side__btn'),
 	selectSideBoth = document.querySelector('.select-side--both'),
 	selectSideOut = document.querySelector('.select-side--out'),
@@ -21,18 +22,18 @@ const
 	facOutBox = document.querySelector('.facingOut-kit'),
 	facInBox = document.querySelector('.facingIn-kit'),
 	knobBox = document.querySelector('.knob-kit'),
-	testover = document.querySelector('.testover'),
-	testmod = document.querySelector('.testmod'),
-	testfacOut = document.querySelector('.testfacOut'),
-	testfacIn = document.querySelector('.testfacIn'),
-	testknob = document.querySelector('.testknob');
+	underlay = document.querySelector('.underlay'),
+	modMob = document.querySelector('.models__mobile'),
+	facOutMob = document.querySelector('.facingOut__mobile'),
+	facInMob = document.querySelector('.facingIn__mobile'),
+	knobMob = document.querySelector('.knob__mobile');
 
 const
 	resInAll = document.querySelectorAll('.resultIn-kit'),
-	testint = document.querySelector('.testint'),
-	testintIn = document.querySelector('.testint-inside');
+	wallpapper = document.querySelector('.wallpapper'),
+	wallpapperBox = document.querySelector('.wallpapper__box');
 
-	const
+const
 	modName = document.querySelector('.models-name'),
 	facOutName = document.querySelector('.facingOut-name'),
 	facInName = document.querySelector('.facingIn-name'),
@@ -58,40 +59,59 @@ const
 
 // Дверь на фоне
 
-// selectSideBoth.addEventListener('click', (e) => {
-// 	testint.classList.remove('none');
-// 	testint.classList.add('block');
-// 	console.log('rere');
+wallBtn.addEventListener('click', (e) => {
+	wallpapper.classList.remove('none');
+	wallpapper.classList.add('block');
+	underlay.classList.add('block');
+	underlay.classList.remove('none');
+	console.log('rere');
 
-// 	testintIn.appendChild(resIn.cloneNode(true));
-// });
+	wallpapperBox.appendChild(resIn.cloneNode(true));
 
-testmod.addEventListener('click', (e) => {
-	testover.classList.add('block');
+	let wallRes = wallpapperBox.querySelectorAll('.resultIn-kit');
+	wallRes.forEach(function (item, i, arr) {
+		item.classList.remove('resultIn-kit');
+		item.classList.add('wallpapper-result');
+	});
+});
+
+modMob.addEventListener('click', (e) => {
+	underlay.classList.add('block');
 	modBox.classList.add('flex');
+	modMob.classList.add('mobile__btn-active');
 });
 
-testfacOut.addEventListener('click', (e) => {
-	testover.classList.add('block');
+facOutMob.addEventListener('click', (e) => {
+	underlay.classList.add('block');
 	facOutBox.classList.add('flex');
+	facOutMob.classList.add('mobile__btn-active');
 });
 
-testfacIn.addEventListener('click', (e) => {
-	testover.classList.add('block');
+facInMob.addEventListener('click', (e) => {
+	underlay.classList.add('block');
 	facInBox.classList.add('flex');
+	facInMob.classList.add('mobile__btn-active');
 });
 
-testknob.addEventListener('click', (e) => {
-	testover.classList.add('block');
+knobMob.addEventListener('click', (e) => {
+	underlay.classList.add('block');
 	knobBox.classList.add('flex');
+	knobMob.classList.add('mobile__btn-active');
 });
 
-testover.addEventListener('click', (e) => {
-	testover.classList.remove('block');
+underlay.addEventListener('click', (e) => {
+	underlay.classList.remove('block');
+	wallpapper.classList.remove('block');
+	wallpapper.classList.add('none');
+	wallpapperBox.innerHTML = '';
 	modBox.classList.remove('flex');
 	facOutBox.classList.remove('flex');
 	facInBox.classList.remove('flex');
 	knobBox.classList.remove('flex');
+	modMob.classList.remove('mobile__btn-active');
+	facOutMob.classList.remove('mobile__btn-active');
+	facInMob.classList.remove('mobile__btn-active');
+	knobMob.classList.remove('mobile__btn-active');
 });
 
 
