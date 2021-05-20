@@ -176,8 +176,8 @@
 	}
 
 	.resultOut-kit {
-		position: relative;
-		display: inline-block;
+		/* position: relative; */
+		/* display: inline-block; */
 		height: 100%;
 		width: 52%;
 		/* background-color: #777; */
@@ -199,8 +199,8 @@
 	}
 
 	.resultIn-kit {
-		position: relative;
-		display: inline-block;
+		/* position: relative; */
+		/* display: inline-block; */
 		height: 100%;
 		width: 48%;
 		/* background-color: #888; */

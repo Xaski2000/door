@@ -339,9 +339,37 @@ html {
 	font-size: 16px;
 }
 
+
+.wallpapper {
+	/* display: none; */
+	/* width: 70vw; */
+	max-width: 1050px;
+	height: auto;
+	position: absolute;
+	top: 40%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	z-index: 1000000;
+}
+
+.wallpapper::before {
+	content: '';
+	display: block;
+	padding-top: 66.666%;
+}
+
+.wallpapper__img {
+	position: absolute;
+}
+
+.wallpapper__box {
+	height: 100%;
+	width: 330px;
+}
+
 .wallpapper-result {
-	/* position: relative;
-	display: inline-block; */
+	position: relative;
+	display: inline-block;
 	/* height: 100%;
 	width: 330px; */
 	/* margin: 158px auto auto 526px; */
@@ -349,7 +377,7 @@ html {
 
 	/* background-color: #eee; */
 	/* width: 300px; */
-	width: 91%;
+	width: 50%;
 	height: auto;
 }
 
@@ -357,32 +385,6 @@ html {
 	content: '';
 	display: block;
 	padding-top: 200%;
-}
-
-
-.wallpapper {
-	/* display: none; */
-	width: 80vw;
-	height: auto;
-	background-image: url(/img/Stalnaya_dver_Gardian_Vkhodnye_dveri_s_zerkalom_1_.jpg);
-	background-repeat: no-repeat;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -28%);
-	z-index: 1000000;
-}
-
-.wallpapper::after {
-	content: '';
-	display: block;
-	padding-top: 66.666%;
-}
-
-.wallpapper__box {
-	height: 100%;
-	width: 330px;
 }
 
 .underlay {
