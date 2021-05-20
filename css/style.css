@@ -436,6 +436,10 @@ html {
 	display: block;
 }
 
+.inline-block {
+	display: inline-block;
+}
+
 .testbtn {
 	display: none;
 }

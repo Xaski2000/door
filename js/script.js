@@ -247,28 +247,28 @@ selectSideBtn.forEach(function (item, i, arr) {
 selectSideBoth.addEventListener('click', (e) => {
 	resOut.classList.remove('none');
 	resIn.classList.remove('none');
-	resOut.classList.remove('block');
-	resIn.classList.remove('block');
-	resOut.classList.add('block');
-	resIn.classList.add('block');
+	resOut.classList.remove('inline-block');
+	resIn.classList.remove('inline-block');
+	resOut.classList.add('inline-block');
+	resIn.classList.add('inline-block');
 });
 
 selectSideOut.addEventListener('click', (e) => {
 	resOut.classList.remove('none');
 	resIn.classList.remove('none');
-	resOut.classList.remove('block');
-	resIn.classList.remove('block');
+	resOut.classList.remove('inline-block');
+	resIn.classList.remove('inline-block');
 	resIn.classList.add('none');
-	resOut.classList.add('block');
+	resOut.classList.add('inline-block');
 });
 
 selectSideIn.addEventListener('click', (e) => {
 	resOut.classList.remove('none');
 	resIn.classList.remove('none');
-	resOut.classList.remove('block');
-	resIn.classList.remove('block');
+	resOut.classList.remove('inline-block');
+	resIn.classList.remove('inline-block');
 	resOut.classList.add('none');
-	resIn.classList.add('block');
+	resIn.classList.add('inline-block');
 });
 
 // const testbtn = document.querySelector('.test-btn'),
