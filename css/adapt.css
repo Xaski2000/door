@@ -103,11 +103,11 @@
 		transition: all 0.3s;
 	}
 
-	.modelsOut__item::after {
+	/* .modelsOut__item::after {
 		content: '';
 		display: block;
 		padding-top: 80%;
-	}
+	} */
 
 	.facingOut-kit {
 		display: none;
@@ -133,11 +133,11 @@
 		transition: all 0.3s;
 	}
 
-	.facingOut__item::after {
+	/* .facingOut__item::after {
 		content: '';
 		display: block;
 		padding-top: 81%;
-	}
+	} */
 
 	.facingIn-kit {
 		display: none;
@@ -163,11 +163,11 @@
 		transition: all 0.3s;
 	}
 
-	.facingIn__item::after {
+	/* .facingIn__item::after {
 		content: '';
 		display: block;
 		padding-top: 81%;
-	}
+	} */
 
 	/* .knob-kit {
 		display: none;
@@ -205,12 +205,12 @@
 		transition: all 0.3s;
 	}
 
-	.knob__item::after {
+	/* .knob__item::after {
 		content: '';
 		display: block;
 		padding-top: 80%;
 	}
-/*
+/* */
 	.result-kit {
 		position: relative;
 		display: flex;
@@ -258,20 +258,20 @@
 		-webkit-width: 100%;
 	}
 
-	/* .result-box::after {
+	.result-box::after {
 		content: '';
 		display: block;
 		padding-top: 100%;
-	} */
+	}
 
-	.result-box::after {
+	/* .result-box::after {
 		content: '';
 		-webkit-content: '';
 		display: block;
 		-webkit-display: block;
 		padding-top: 100%;
 		-webkit-padding-top: 100%;
-	}
+	} */
 
 
 	.func__btn {
