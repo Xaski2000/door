@@ -103,6 +103,12 @@
 		transition: all 0.3s;
 	}
 
+	.modelsOut__item::after {
+		content: '';
+		display: block;
+		padding-top: 80%;
+	}
+
 	.facingOut-kit {
 		display: none;
 		position: fixed;
@@ -116,6 +122,23 @@
 		padding-left: 0px;
 	}
 
+	.facingOut__item {
+		width: 22%;
+		height: auto;
+		margin: 5px 0 5px 3%;
+		background-color: #fff;
+		border: 3px solid #e9e9e9;
+		cursor: pointer;
+		scroll-snap-align: center;
+		transition: all 0.3s;
+	}
+
+	.facingOut__item::after {
+		content: '';
+		display: block;
+		padding-top: 81%;
+	}
+
 	.facingIn-kit {
 		display: none;
 		position: fixed;
@@ -127,6 +150,23 @@
 		margin-right: -50%;
 		transform: translate(-50%, -50%);
 		padding-left: 0px;
+	}
+
+	.facingIn__item {
+		width: 22%;
+		height: auto;
+		margin: 5px 0 5px 3%;
+		background-color: #fff;
+		border: 3px solid #e9e9e9;
+		cursor: pointer;
+		scroll-snap-align: center;
+		transition: all 0.3s;
+	}
+
+	.facingIn__item::after {
+		content: '';
+		display: block;
+		padding-top: 81%;
 	}
 
 	/* .knob-kit {
@@ -153,6 +193,22 @@
 		margin-right: -50%;
 		transform: translate(-50%, -50%);
 		/* display: none; */
+	}
+
+	.knob__item {
+		width: 28%;
+		height: auto;
+		margin: 5px 0 5px 4.5%;
+		background-color: #fff;
+		border: 3px solid #e9e9e9;
+		cursor: pointer;
+		transition: all 0.3s;
+	}
+
+	.knob__item::after {
+		content: '';
+		display: block;
+		padding-top: 80%;
 	}
 /*
 	.result-kit {
