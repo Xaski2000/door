@@ -94,6 +94,7 @@
 
 
 	.modelsOut__item {
+		display: inline-block;
 		width: 30%;
 		height: auto;
 		margin: 5px 0 5px 3%;
@@ -103,11 +104,11 @@
 		transition: all 0.3s;
 	}
 
-	/* .modelsOut__item::after {
+	.modelsOut__item::after {
 		content: '';
 		display: block;
 		padding-top: 80%;
-	} */
+	}
 
 	.facingOut-kit {
 		display: none;
@@ -139,6 +140,12 @@
 		padding-top: 81%;
 	} */
 
+	.facingOut__item::before {
+		content: '';
+		display: block;
+		padding-bottom: 81%;
+	}
+
 	.facingIn-kit {
 		display: none;
 		position: fixed;
@@ -163,11 +170,11 @@
 		transition: all 0.3s;
 	}
 
-	/* .facingIn__item::after {
+	.facingIn__item::after {
 		content: '';
 		display: block;
 		padding-top: 81%;
-	} */
+	}
 
 	/* .knob-kit {
 		display: none;
@@ -205,12 +212,12 @@
 		transition: all 0.3s;
 	}
 
-	/* .knob__item::after {
+	.knob__item::after {
 		content: '';
 		display: block;
 		padding-top: 80%;
 	}
-/* */
+/*
 	.result-kit {
 		position: relative;
 		display: flex;
@@ -242,11 +249,11 @@
 	}
 
 
-	.result-box {
+	/* .result-box {
 		display: flex;
 		height: auto;
 		width: 100%;
-	}
+	} */
 
 	.result-box {
 		display: flex;
@@ -258,20 +265,20 @@
 		-webkit-width: 100%;
 	}
 
-	.result-box::after {
+	/* .result-box::after {
 		content: '';
 		display: block;
 		padding-top: 100%;
-	}
+	} */
 
-	/* .result-box::after {
+	.result-box::after {
 		content: '';
 		-webkit-content: '';
 		display: block;
 		-webkit-display: block;
 		padding-top: 100%;
 		-webkit-padding-top: 100%;
-	} */
+	}
 
 
 	.func__btn {
