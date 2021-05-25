@@ -1,8 +1,8 @@
 const
 	resOut = document.querySelector('.resultOut-kit'),
 	resIn = document.querySelector('.resultIn-kit'),
-	modOutItem = document.querySelectorAll('.modelsOut__item'),
-	modOutItemImg = document.querySelectorAll('.modelsOut__item-img'),
+	modOutItem = document.querySelectorAll('.modelsOut__item-box'),
+	modOutItemImg = document.querySelectorAll('.modelsOut__item'),
 	modOutRes = document.querySelectorAll('.modelsOut-result'),
 	modRes4 = document.querySelector('.models-result-4'),
 	facOutItem = document.querySelectorAll('.facingOut__item'),
@@ -144,14 +144,12 @@ modOutItem.forEach(function (item, i, arr) {
 			modRes4.classList.add('block');
 
 			e.target.classList.add('border');
-			console.log(e.target);
 
 
 
-			// console.log('Корпус ' + (i + 1));
+			// console.log(modOutItem[i]);
 
 		});
-		console.log(item);
 	}
 });
 
