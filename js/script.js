@@ -3,13 +3,16 @@ const
 	resIn = document.querySelector('.resultIn-kit'),
 	modOutItem = document.querySelectorAll('.modelsOut__item-box'),
 	modOutItemImg = document.querySelectorAll('.modelsOut__item'),
+	facOutItemImg = document.querySelectorAll('.facingOut__item'),
+	facInItemImg = document.querySelectorAll('.facingIn__item'),
+	knobItemImg = document.querySelectorAll('.knob__item'),
 	modOutRes = document.querySelectorAll('.modelsOut-result'),
 	modRes4 = document.querySelector('.models-result-4'),
-	facOutItem = document.querySelectorAll('.facingOut__item'),
+	facOutItem = document.querySelectorAll('.facingOut__item-box'),
 	facOutRes = document.querySelectorAll('.facingOut-result'),
-	facInItem = document.querySelectorAll('.facingIn__item'),
+	facInItem = document.querySelectorAll('.facingIn__item-box'),
 	facInRes = document.querySelectorAll('.facingIn-result'),
-	knobItem = document.querySelectorAll('.knob__item'),
+	knobItem = document.querySelectorAll('.knob__item-box'),
 	knobOutRes = document.querySelectorAll('.knobOut-result'),
 	knobInRes = document.querySelectorAll('.knobIn-result'),
 	wallBtn = document.querySelector('.wallpapper__btn'),
@@ -162,6 +165,9 @@ facOutItem.forEach(function (item, i, arr) {
 			facOutItem.forEach(item => {
 				item.classList.remove('border');
 			});
+			facOutItemImg.forEach(item => {
+				item.classList.remove('border');
+			});
 
 			facOutRes[i].src = facOutRes[i].dataset.src;
 			facOutRes[i].classList.add('block');
@@ -190,6 +196,9 @@ facInItem.forEach(function (item, i, arr) {
 			facInItem.forEach(item => {
 				item.classList.remove('border');
 			});
+			facInItemImg.forEach(item => {
+				item.classList.remove('border');
+			});
 
 			facInRes[i].src = facInRes[i].dataset.src;
 			facInRes[i].classList.add('block');
@@ -216,6 +225,9 @@ knobItem.forEach(function (item, i, arr) {
 				item.classList.remove('block');
 			});
 			knobItem.forEach(item => {
+				item.classList.remove('border');
+			});
+			knobItemImg.forEach(item => {
 				item.classList.remove('border');
 			});
 
