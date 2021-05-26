@@ -438,18 +438,7 @@ html {
 
 
 .wallpapper {
-	/* display: flex;
-	width: 70%;
-	margin: auto;
-	height: auto;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 1000000; */
-
 	display: block;
-	/* background-color: #456; */
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -459,15 +448,37 @@ html {
 	z-index: 1000;
 }
 
-/* .wallpapper::before {
+.wallpapper__wrapper {
+	position: absolute;
+	width: 70%;
+	margin: auto;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10000;
+}
+
+.wallpapper__wrapper::before {
 	content: '';
 	display: block;
 	padding-top: 66.666%;
+}
+
+/* .wallpapper__img {
+	position: absolute;
+	width: 70%;
+	margin: auto;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10000;
 } */
 
 .wallpapper__img {
 	position: absolute;
-	width: 70%;
+	width: 100%;
 	margin: auto;
 	height: auto;
 	top: 50%;
@@ -484,22 +495,15 @@ html {
 
 .wallpapper__box {
 	height: 100%;
-	width: 33.5%;
+	width: 47.5%;
 	z-index: 10000;
-	margin: 14.35% auto auto 43.7%;
+	margin: -61.5% auto auto 41.1%;
 }
 
 .wallpapper-result {
 	position: relative;
 	display: inline-block;
-	/* height: 100%;
-	width: 330px; */
-	/* margin: 158px auto auto 526px; */
-	/* margin: 50% auto auto 100%; */
 	margin: auto;
-
-	/* background-color: #eee; */
-	/* width: 300px; */
 	width: 50%;
 	height: auto;
 	z-index: 10000;
