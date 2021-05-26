@@ -109,6 +109,9 @@ wallBtn.addEventListener('click', (e) => {
 		item.classList.remove('resultIn-kit');
 		item.classList.add('wallpapper-result');
 	});
+
+	document.querySelector('.wallpapper-result').classList.remove('none');
+
 });
 
 modMob.addEventListener('click', (e) => {
