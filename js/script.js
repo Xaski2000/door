@@ -142,6 +142,9 @@ modOutItem.forEach(function (item, i, arr) {
 			let name = names[names.length - 1].split('.')[0];
 			// console.log(name);
 			modName.innerHTML = name;
+			modMob.innerHTML =
+			`<p class="mobile__btn-text">Корпус</p>
+			<p class="mobile__btn-name">`+ name +`</p>`;
 
 			modRes4.src = modRes4.dataset.src;
 			modRes4.classList.add('block');
@@ -178,6 +181,9 @@ facOutItem.forEach(function (item, i, arr) {
 			let name = names[names.length - 1].split('.')[0];
 			// console.log(name);
 			facOutName.innerHTML = name;
+			facOutMob.innerHTML =
+			`<p class="mobile__btn-text">Внешняя панель</p>
+			<p class="mobile__btn-name">`+ name +`</p>`;
 
 			e.target.classList.add('border');
 
@@ -209,6 +215,9 @@ facInItem.forEach(function (item, i, arr) {
 			let name = names[names.length - 1].split('.')[0];
 			// console.log(name);
 			facInName.innerHTML = name;
+			facInMob.innerHTML =
+			`<p class="mobile__btn-text">Внешняя панель</p>
+			<p class="mobile__btn-name">`+ name +`</p>`;
 
 			e.target.classList.add('border');
 
@@ -242,6 +251,10 @@ knobItem.forEach(function (item, i, arr) {
 			let name = names[names.length - 1].split('.')[0];
 			// console.log(name);
 			knobName.innerHTML = name;
+			knobMob.innerHTML =
+			`<p class="mobile__btn-text">Внешняя панель</p>
+			<p class="mobile__btn-name">`+ name +`</p>`;
+
 
 			e.target.classList.add('border');
 
