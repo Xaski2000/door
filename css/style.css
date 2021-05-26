@@ -438,30 +438,55 @@ html {
 
 
 .wallpapper {
-	/* display: none; */
-	/* width: 70vw; */
-	max-width: 1050px;
+	/* display: flex;
+	width: 70%;
+	margin: auto;
 	height: auto;
-	position: absolute;
-	top: 40%;
-	left: 25%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: 1000000;
+	z-index: 1000000; */
+
+	display: block;
+	/* background-color: #456; */
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity:1;
+	z-index: 1000;
 }
 
-.wallpapper::before {
+/* .wallpapper::before {
+	content: '';
+	display: block;
+	padding-top: 66.666%;
+} */
+
+.wallpapper__img {
+	position: absolute;
+	width: 70%;
+	margin: auto;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10000;
+}
+
+.wallpapper__img::before {
 	content: '';
 	display: block;
 	padding-top: 66.666%;
 }
 
-.wallpapper__img {
-	position: absolute;
-}
-
 .wallpapper__box {
 	height: 100%;
-	width: 330px;
+	width: 33.5%;
+	z-index: 10000;
+	margin: 14.35% auto auto 43.7%;
 }
 
 .wallpapper-result {
@@ -470,18 +495,32 @@ html {
 	/* height: 100%;
 	width: 330px; */
 	/* margin: 158px auto auto 526px; */
-	margin: 48% auto auto 159.5%;
+	/* margin: 50% auto auto 100%; */
+	margin: auto;
 
 	/* background-color: #eee; */
 	/* width: 300px; */
 	width: 50%;
 	height: auto;
+	z-index: 10000;
 }
 
 .wallpapper-result::after {
 	content: '';
 	display: block;
 	padding-top: 200%;
+}
+
+.wallpaper__underlay {
+	display: none;
+	background: #000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.2;
+	z-index: 1000;
 }
 
 .underlay {

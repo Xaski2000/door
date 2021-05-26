@@ -33,6 +33,18 @@
 		color: #333;
 	}
 
+	.wallpaper__underlay {
+		display: none;
+		background: #000;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.2;
+		z-index: 1000;
+	}
+
 	.underlay {
 		display: none;
 		background: #000;
@@ -43,6 +55,10 @@
 		height: 100%;
 		opacity: 0.2;
 		z-index: 1000;
+	}
+
+	.wallpapper__img {
+		width: 90%;
 	}
 
 	/* .wrapper-kit {

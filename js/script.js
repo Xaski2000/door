@@ -27,6 +27,7 @@ const
 	facInBox = document.querySelector('.facingIn-kit'),
 	knobBox = document.querySelector('.knob-kit'),
 	underlay = document.querySelector('.underlay'),
+	wallUnderlay = document.querySelector('.wallpaper__underlay'),
 	modMob = document.querySelector('.models__mobile'),
 	facOutMob = document.querySelector('.facingOut__mobile'),
 	facInMob = document.querySelector('.facingIn__mobile'),
@@ -63,11 +64,42 @@ const
 
 // Дверь на фоне
 
+underlay.addEventListener('click', (e) => {
+	underlay.classList.remove('block');
+	wallpapper.classList.remove('block');
+	wallpapper.classList.add('none');
+	wallpapperBox.innerHTML = '';
+	modBox.classList.remove('flex');
+	facOutBox.classList.remove('flex');
+	facInBox.classList.remove('flex');
+	knobBox.classList.remove('flex');
+	modMob.classList.remove('mobile__btn-active');
+	facOutMob.classList.remove('mobile__btn-active');
+	facInMob.classList.remove('mobile__btn-active');
+	knobMob.classList.remove('mobile__btn-active');
+});
+
+
+wallUnderlay.addEventListener('click', (e) => {
+	wallUnderlay.classList.remove('block');
+	wallpapper.classList.remove('block');
+	wallpapper.classList.add('none');
+	wallpapperBox.innerHTML = '';
+	modBox.classList.remove('flex');
+	facOutBox.classList.remove('flex');
+	facInBox.classList.remove('flex');
+	knobBox.classList.remove('flex');
+	modMob.classList.remove('mobile__btn-active');
+	facOutMob.classList.remove('mobile__btn-active');
+	facInMob.classList.remove('mobile__btn-active');
+	knobMob.classList.remove('mobile__btn-active');
+});
+
 wallBtn.addEventListener('click', (e) => {
 	wallpapper.classList.remove('none');
 	wallpapper.classList.add('block');
-	underlay.classList.add('block');
-	underlay.classList.remove('none');
+	wallUnderlay.classList.add('block');
+	wallUnderlay.classList.remove('none');
 	console.log('rere');
 
 	wallpapperBox.appendChild(resIn.cloneNode(true));
@@ -102,22 +134,6 @@ knobMob.addEventListener('click', (e) => {
 	knobBox.classList.add('flex');
 	knobMob.classList.add('mobile__btn-active');
 });
-
-underlay.addEventListener('click', (e) => {
-	underlay.classList.remove('block');
-	wallpapper.classList.remove('block');
-	wallpapper.classList.add('none');
-	wallpapperBox.innerHTML = '';
-	modBox.classList.remove('flex');
-	facOutBox.classList.remove('flex');
-	facInBox.classList.remove('flex');
-	knobBox.classList.remove('flex');
-	modMob.classList.remove('mobile__btn-active');
-	facOutMob.classList.remove('mobile__btn-active');
-	facInMob.classList.remove('mobile__btn-active');
-	knobMob.classList.remove('mobile__btn-active');
-});
-
 
 modOutItem.forEach(function (item, i, arr) {
 	if (i + 1 <= modOutRes.length) {
