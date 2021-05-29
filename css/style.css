@@ -86,14 +86,15 @@ html {
 
 .modelsOut__item {
 	position: absolute;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	border: 3px solid #e9e9e9;
 	transition: all 0.3s;
 }
+
 /*
 .facingOut-kit {
 	height: 155px;
@@ -159,8 +160,8 @@ html {
 
 .facingOut__item {
 	position: absolute;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -203,8 +204,8 @@ html {
 
 .facingIn__item {
 	position: absolute;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -276,8 +277,8 @@ html {
 
 .knob__item {
 	/* position: absolute; */
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -444,13 +445,13 @@ html {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	opacity:1;
+	opacity: 1;
 	z-index: 1000;
 }
 
 .wallpapper__wrapper {
 	position: absolute;
-	width: 70%;
+	width: 60%;
 	margin: auto;
 	height: auto;
 	top: 50%;
@@ -514,6 +515,96 @@ html {
 	display: block;
 	padding-top: 200%;
 }
+
+.wallpaper__x-box {
+	display: flex;
+	position: absolute;
+	width: 3vw;
+	height: auto;
+	padding: 0.5%;
+	top: 50%;
+	left: 97%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	z-index: 100000000;
+	margin: -37% auto auto auto;
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.wallpapper__x-box::after {
+	content: '';
+	display: block;
+	padding-top: 100%;
+}
+
+.wallpaper__x {
+	width: 100%;
+	height: 100%;
+}
+
+/* .wallpaper__x {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 1000000;
+}
+
+.wallpaper__x:before,
+.wallpaper__x:after {
+	content: '';
+	position: absolute;
+	width: 36px;
+	height: 4px;
+	background-color: #333;
+	border-radius: 2px;
+	top: 16px;
+}
+
+.wallpaper__x:before {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+	left: 2px;
+}
+
+.wallpaper__x:after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	right: 2px;
+} */
+
+/* .wallpaper__x {
+	width: 2%;
+	height: 2;
+	position: relative;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.wallpaper__x:before,
+.wallpaper__x:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	background: #d00;
+}
+
+.wallpaper__x:before {
+	left: 50%;
+	width: 30%;
+	margin-left: -15%;
+	height: 100%;
+}
+
+.wallpaper__x:after {
+	top: 50%;
+	height: 30%;
+	margin-top: -15%;
+	width: 100%;
+} */
 
 .wallpaper__underlay {
 	display: none;
@@ -587,3 +678,5 @@ html {
 .testbtn {
 	display: none;
 }
+
+

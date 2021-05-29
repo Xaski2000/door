@@ -36,7 +36,8 @@ const
 const
 	resInAll = document.querySelectorAll('.resultIn-kit'),
 	wallpapper = document.querySelector('.wallpapper'),
-	wallpapperBox = document.querySelector('.wallpapper__box');
+	wallpapperBox = document.querySelector('.wallpapper__box'),
+	wallpapperX = document.querySelector('.wallpaper__x-box');
 
 const
 	modName = document.querySelector('.models-name'),
@@ -81,6 +82,21 @@ underlay.addEventListener('click', (e) => {
 
 
 wallUnderlay.addEventListener('click', (e) => {
+	wallUnderlay.classList.remove('block');
+	wallpapper.classList.remove('block');
+	wallpapper.classList.add('none');
+	wallpapperBox.innerHTML = '';
+	modBox.classList.remove('flex');
+	facOutBox.classList.remove('flex');
+	facInBox.classList.remove('flex');
+	knobBox.classList.remove('flex');
+	modMob.classList.remove('mobile__btn-active');
+	facOutMob.classList.remove('mobile__btn-active');
+	facInMob.classList.remove('mobile__btn-active');
+	knobMob.classList.remove('mobile__btn-active');
+});
+
+wallpapperX.addEventListener('click', (e) => {
 	wallUnderlay.classList.remove('block');
 	wallpapper.classList.remove('block');
 	wallpapper.classList.add('none');
@@ -163,7 +179,7 @@ modOutItem.forEach(function (item, i, arr) {
 			modName.innerHTML = name;
 			modMob.innerHTML =
 			`<p class="mobile__btn-text">Корпус</p>
-			<p class="mobile__btn-name">`+ name +`</p>`;
+			<p class="mobile__btn-name">(`+ name +`)</p>`;
 
 			modRes4.src = modRes4.dataset.src;
 			modRes4.classList.add('block');
@@ -202,7 +218,7 @@ facOutItem.forEach(function (item, i, arr) {
 			facOutName.innerHTML = name;
 			facOutMob.innerHTML =
 			`<p class="mobile__btn-text">Внешняя панель</p>
-			<p class="mobile__btn-name">`+ name +`</p>`;
+			<p class="mobile__btn-name">(`+ name +`)</p>`;
 
 			e.target.classList.add('border');
 
@@ -236,7 +252,7 @@ facInItem.forEach(function (item, i, arr) {
 			facInName.innerHTML = name;
 			facInMob.innerHTML =
 			`<p class="mobile__btn-text">Внешняя панель</p>
-			<p class="mobile__btn-name">`+ name +`</p>`;
+			<p class="mobile__btn-name">(`+ name +`)</p>`;
 
 			e.target.classList.add('border');
 
@@ -272,7 +288,7 @@ knobItem.forEach(function (item, i, arr) {
 			knobName.innerHTML = name;
 			knobMob.innerHTML =
 			`<p class="mobile__btn-text">Внешняя панель</p>
-			<p class="mobile__btn-name">`+ name +`</p>`;
+			<p class="mobile__btn-name">(`+ name +`)</p>`;
 
 
 			e.target.classList.add('border');
@@ -400,3 +416,4 @@ selectSideIn.addEventListener('click', (e) => {
 // // Внутренние ручки
 
 // const knobInRes1 = document.querySelector('.knobIn-result-1');
+
