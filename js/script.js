@@ -40,6 +40,7 @@ const
 	wallpapperX = document.querySelector('.wallpaper__x-box');
 
 const
+	buyBtn = document.querySelector('.buy__btn'),
 	modName = document.querySelector('.models-name'),
 	facOutName = document.querySelector('.facingOut-name'),
 	facInName = document.querySelector('.facingIn-name'),
@@ -102,7 +103,7 @@ wallBtn.addEventListener('click', (e) => {
 	wallpapper.classList.add('block');
 	wallUnderlay.classList.add('block');
 	wallUnderlay.classList.remove('none');
-	console.log('rere');
+	// console.log('rere');
 
 	wallpapperBox.appendChild(resIn.cloneNode(true));
 
@@ -167,6 +168,7 @@ modOutItem.forEach(function (item, i, arr) {
 			`<p class="mobile__btn-text">Корпус</p>
 			<p class="mobile__btn-name">(`+ name +`)</p>`;
 
+
 			modRes4.src = modRes4.dataset.src;
 			modRes4.classList.add('block');
 
@@ -205,6 +207,11 @@ facOutItem.forEach(function (item, i, arr) {
 			facOutMob.innerHTML =
 			`<p class="mobile__btn-text">Внешняя панель</p>
 			<p class="mobile__btn-name">(`+ name +`)</p>`;
+
+			let buyLink = facOutItem[i].getAttribute('data-src');
+			buyBtn.href = buyLink;
+			console.log(buyLink);
+
 
 			e.target.classList.add('border');
 
